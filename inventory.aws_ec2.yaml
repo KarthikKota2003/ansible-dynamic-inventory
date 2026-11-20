@@ -7,5 +7,8 @@ filters:
   instance-state-name: running
   tag:Name: roboshop-frontend
 
-hostnames:
+hostnames: #this will let ansible refer to all the selected servers by their private ip address
   - private-ip-address
+
+keyed_groups:
+  - key: tags.Name

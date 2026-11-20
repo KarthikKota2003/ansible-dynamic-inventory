@@ -1,5 +1,6 @@
 - name: Pinging all the frontend servers
   hosts: roboshop_frontend
+  become: yes
   serial: 5
   tasks:
   # - name: Ping the servers

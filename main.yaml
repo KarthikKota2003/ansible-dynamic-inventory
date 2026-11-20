@@ -1,5 +1,5 @@
 - name: Pinging all the frontend servers
-  hosts: _roboshop_frontend
+  hosts: roboshop_frontend
   tasks:
   - name: Ping the servers
     ping:

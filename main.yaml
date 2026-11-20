@@ -1,6 +1,6 @@
 - name: Pinging all the frontend servers
   hosts: roboshop_frontend
-  serial: 3
+  serial: 5
   tasks:
   # - name: Ping the servers
   #   ping:
@@ -12,3 +12,8 @@
   - name: TASK-2
     debug:
       msg: "MSG-2"
+  
+  - name: Installing nginx
+    dnf:
+      name: nginx
+      state: present

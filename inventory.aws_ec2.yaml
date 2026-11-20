@@ -13,3 +13,4 @@ hostnames: #this will let ansible refer to all the selected servers by their pri
 keyed_groups:
   - key: tags.Name
     prefix: ""
+    separator: ""
